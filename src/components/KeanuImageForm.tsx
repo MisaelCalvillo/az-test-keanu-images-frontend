@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useLazyQuery, gql } from '@apollo/client';
 import { KeanuImageParams, KeanuImageData } from '../types';
 
+import './KeanuImageForm.css';
+
 const GET_KEANU_IMAGE = gql`
   query GetKeanuImage($width: Int!, $height: Int!, $young: Boolean!, $grayscale: Boolean!) {
     fetchKeanuImage(width: $width, height: $height, young: $young, grayscale: $grayscale)
@@ -17,6 +19,8 @@ const KeanuImageForm: React.FC = () => {
   });
 
   const [getImage, { loading, error, data }] = useLazyQuery<KeanuImageData, KeanuImageParams>(GET_KEANU_IMAGE);
+
+  console.log(data)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -81,8 +85,9 @@ const KeanuImageForm: React.FC = () => {
       {error && <p>Error: {error.message}</p>}
       {data && (
         <img
-          src={`data:image/jpeg;base64,${data.fetchKeanuImage}`}
-          alt="Keanu Reeves"
+            className="keanu-image"
+            src={`data:image/svg+xml;base64, ${data.fetchKeanuImage}`}
+            alt="Keanu Reeves"
         />
       )}
     </div>
