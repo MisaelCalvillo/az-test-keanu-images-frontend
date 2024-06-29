@@ -7,7 +7,7 @@ if (!graphqlUrl) {
 }
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000/graphql', // Update this to your backend URL
+  uri: graphqlUrl, // Update this to your backend URL
 });
 
 const client = new ApolloClient({
