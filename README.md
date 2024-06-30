@@ -1,46 +1,113 @@
-# Getting Started with Create React App
+# Keanu Reeves Image Retrieval App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![CI/CD Status](https://github.com/MisaelCalvillo/az-test-keanu-images-frontend/actions/workflows/main.yml/badge.svg)
 
-## Available Scripts
+A dynamic React application that allows users to retrieve and display images of Keanu Reeves based on specified parameters. This project is part of a full-stack coding challenge demonstrating skills in React, TypeScript, Apollo Client, and Material-UI.
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+The application is currently deployed on Vercel: [Keanu Reeves Image Retriever](https://az-test-keanu-images-app.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Dynamic form generation based on JSON configuration
+- Real-time form validation using AJV
+- GraphQL integration with Apollo Client
+- Responsive design using Material-UI components
+- Image retrieval with customizable parameters (width, height, young/old, grayscale/color)
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before you begin, ensure you have met the following requirements:
 
-### `npm run build`
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and Local Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```
+   git clone https://github.com/MisaelCalvillo/az-test-keanu-images-frontend.git
+   cd az-test-keanu-images-frontend
+   ```
 
-### `npm run eject`
+2. Install the dependencies:
+   ```
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Create a `.env` file in the root directory and add the following:
+   ```
+   REACT_APP_API_URL=your_backend_graphql_endpoint
+   ```
+   Replace `your_backend_graphql_endpoint` with the URL of your GraphQL API.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+5. Open your browser and visit `http://localhost:3000`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Building for Production
 
-## Learn More
+To create a production build, run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This will generate a `build` folder with optimized production-ready files.
+
+## Deployment
+
+This project is set up for continuous deployment on Vercel. Any pushes to the `main` branch will trigger a new deployment.
+
+### Manual Deployment
+
+If you wish to deploy manually to Vercel:
+
+1. Install the Vercel CLI:
+   ```
+   npm install -g vercel
+   ```
+
+2. Run the deployment command:
+   ```
+   vercel
+   ```
+
+Follow the prompts to complete the deployment process.
+
+## CI/CD
+
+This project uses GitHub Actions for continuous integration and Vercel for continuous deployment.
+
+- **CI**: On every pull request and push to the `main` branch, GitHub Actions runs tests and linting checks.
+- **CD**: Successful builds on the `main` branch are automatically deployed to Vercel.
+
+Current CI/CD Status: ![CI/CD Status](https://github.com/MisaelCalvillo/az-test-keanu-images-frontend/actions/workflows/main.yml/badge.svg)
+
+## Contributing
+
+Contributions to this project are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or feedback, please open an issue on GitHub or contact the maintainer:
+
+Misael Calvillo Mancilla - [GitHub Profile](https://github.com/MisaelCalvillo)
+
+Project Link: [https://github.com/MisaelCalvillo/az-test-keanu-images-frontend](https://github.com/MisaelCalvillo/az-test-keanu-images-frontend)
