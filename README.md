@@ -1,7 +1,6 @@
 # Keanu Reeves Image Retrieval App
 
-![CI/CD Status](https://github.com/MisaelCalvillo/az-test-keanu-images-frontend/actions/workflows/main.yml/badge.svg)
-
+<!-- ![CI/CD Status](https://github.com/MisaelCalvillo/az-test-keanu-images-frontend/actions/workflows/main.yml/badge.svg) -->
 A dynamic React application that allows users to retrieve and display images of Keanu Reeves based on specified parameters. This project is part of a full-stack coding challenge demonstrating skills in React, TypeScript, Apollo Client, and Material-UI.
 
 ## Live Demo
@@ -20,8 +19,8 @@ The application is currently deployed on Vercel: [Keanu Reeves Image Retriever](
 
 Before you begin, ensure you have met the following requirements:
 
-- Node.js (v14.0.0 or later)
-- npm (v6.0.0 or later)
+- Node.js (v22.2.0 or later)
+- npm (10.8.0 or later)
 
 ## Installation and Local Setup
 
@@ -88,7 +87,7 @@ This project uses GitHub Actions for continuous integration and Vercel for conti
 - **CI**: On every pull request and push to the `main` branch, GitHub Actions runs tests and linting checks.
 - **CD**: Successful builds on the `main` branch are automatically deployed to Vercel.
 
-Current CI/CD Status: ![CI/CD Status](https://github.com/MisaelCalvillo/az-test-keanu-images-frontend/actions/workflows/main.yml/badge.svg)
+<!-- Current CI/CD Status: ![CI/CD Status](https://github.com/MisaelCalvillo/az-test-keanu-images-frontend/actions/workflows/main.yml/badge.svg) -->
 
 ## Contributing
 
