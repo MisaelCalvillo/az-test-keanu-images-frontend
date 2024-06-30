@@ -3,6 +3,14 @@
 <!-- ![CI/CD Status](https://github.com/MisaelCalvillo/az-test-keanu-images-frontend/actions/workflows/main.yml/badge.svg) -->
 A dynamic React application that allows users to retrieve and display images of Keanu Reeves based on specified parameters. This project is part of a full-stack coding challenge demonstrating skills in React, TypeScript, Apollo Client, and Material-UI.
 
+## Project Overview
+
+This frontend application works in conjunction with a specific backend service. For full functionality, please ensure you also have the backend set up and running:
+
+Backend Repository: [az-test-keanu-images](https://github.com/MisaelCalvillo/az-test-keanu-images)
+
+The frontend communicates with this backend via GraphQL to fetch and display Keanu Reeves images based on user input.
+
 ## Live Demo
 
 The application is currently deployed on Vercel: [Keanu Reeves Image Retriever](https://az-test-keanu-images-app.vercel.app/)
@@ -21,6 +29,7 @@ Before you begin, ensure you have met the following requirements:
 
 - Node.js (v22.2.0 or later)
 - npm (10.8.0 or later)
+- Access to the backend service (see [Backend Repository](https://github.com/MisaelCalvillo/az-test-keanu-images))
 
 ## Installation and Local Setup
 
@@ -41,14 +50,16 @@ To run this project locally, follow these steps:
    ```
    REACT_APP_API_URL=your_backend_graphql_endpoint
    ```
-   Replace `your_backend_graphql_endpoint` with the URL of your GraphQL API.
+   Replace `your_backend_graphql_endpoint` with the URL of your GraphQL API from the backend service.
 
-4. Start the development server:
+4. Ensure the backend service is running. Refer to the [backend repository](https://github.com/MisaelCalvillo/az-test-keanu-images) for instructions on setting up and running the backend.
+
+5. Start the development server:
    ```
    npm start
    ```
 
-5. Open your browser and visit `http://localhost:3000`
+6. Open your browser and visit `http://localhost:3000`
 
 ## Building for Production
 
