@@ -1,0 +1,36 @@
+{
+    "fields": [
+      {
+        "name": "width",
+        "label": "Width",
+        "type": "number",
+        "min": 1,
+        "max": 1000,
+        "defaultValue": 300
+      },
+      {
+        "name": "height",
+        "label": "Height",
+        "type": "number",
+        "min": 1,
+        "max": 1000,
+        "defaultValue": 200
+      },
+      {
+        "name": "young",
+        "label": "Young Keanu",
+        "type": "checkbox",
+        "defaultValue": false
+      },
+      {
+        "name": "grayscale",
+        "label": "Grayscale",
+        "type": "checkbox",
+        "defaultValue": false
+      }
+    ],
+    "submitButton": {
+      "label": "Get Keanu Image"
+    }
+  }
+  
